@@ -17,7 +17,7 @@ export default function Home() {
         <title>Home - IEEE | Computational Intelligence Society</title>
         <meta
           name="description"
-          content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
+          content="Institute of Electrical and Electronics Engineers | CIS, RIT Bangalore"
         />
       </Head>
       <Header />
