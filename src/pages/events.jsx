@@ -117,7 +117,7 @@ export default function Login() {
                   </Link>
                 </div>
               </li> */}
-              <li className="neumorphism rounded-2xl border border-white p-5">
+              <li className="neumorphism rounded-2xl border border-white p-5 mb-10">
                 <h3 className="text-center text-3xl font-semibold text-gray-900">
                   Events 2020
                 </h3>
