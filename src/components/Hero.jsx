@@ -1,4 +1,14 @@
 import Image from 'next/image'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+import 'swiper/css'
+import 'swiper/css/effect-fade'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+
+// import required modules
+import { Autoplay, Pagination, Navigation, EffectFade } from 'swiper'
 
 import { ButtonLink } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -11,102 +21,99 @@ import logoTuple from '@/images/logos/tuple.svg'
 
 export function Hero() {
   return (
-    <Container className="pt-5 pb-16 text-center lg:pt-8">
-      {/* <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
-        Accounting{' '}
-        <span className="relative whitespace-nowrap text-blue-600">
-          <svg
-            aria-hidden="true"
-            viewBox="0 0 418 42"
-            className="absolute top-2/3 left-0 h-[0.58em] w-full fill-blue-300/70"
-            preserveAspectRatio="none"
-          >
-            <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z" />
-          </svg>
-          <span className="relative">made simple</span>
-        </span>{' '}
-        for small businesses.
-      </h1> */}
-      <h1 className="mx-auto max-w-2xl font-display text-2xl font-medium tracking-tight text-slate-900 sm:text-3xl">
-        Institute of Electrical and Electronics Engineers, RIT
-      </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        The world's largest technical professional organization for the
-        advancement of technology
-      </p>
-      <div className="mt-10 flex justify-center">
-        {/* <ButtonLink href="/register">Get 6 months free</ButtonLink> */}
-        <ButtonLink
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-          variant="outline"
+    <>
+      <Swiper
+        spaceBetween={30}
+        effect={'fade'}
+        autoHeight={true}
+        centeredSlides={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation, EffectFade]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img
+            className="lg:h-128 h-96 w-full object-fill"
+            src="https://www.officialmediaguide.com/ie06/wp-content/uploads/sites/73/2019/10/abstract01-1024x575.jpg"
+            alt="image slide 1"
+            border-radius="10px"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="lg:h-128 h-96 w-full rounded-lg object-fill"
+            src="https://www.annabellatham.com/wp-content/uploads/2019/12/ING_19043_260593-1024x890.jpg"
+            alt="image slide 2"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="lg:h-128 h-96 w-full object-fill"
+            src="https://media-exp1.licdn.com/dms/image/C4D22AQHkoGeI2vPz8g/feedshare-shrink_2048_1536/0/1648835983648?e=2147483647&v=beta&t=gm23waWUjKeHFpl3-SYomM07jW19WQCiLlX1gtzFshQ"
+            alt="image slide 3"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="lg:h-128 h-96 w-full object-fill"
+            src="https://cis.ieee.org/images/files/slideshow/video-archive.jpg"
+            alt="image slide 4"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="lg:h-128 h-96 w-full object-fill"
+            src="https://pbs.twimg.com/media/Fb_Au2NWYAIIlMt.jpg"
+            alt="image slide 5"
+          />
+        </SwiperSlide>
+      </Swiper>
+      <Container className="pt-5 pb-16 text-center lg:pt-8">
+        {/* <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+      Accounting{' '}
+      <span className="relative whitespace-nowrap text-blue-600">
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 418 42"
+          className="absolute top-2/3 left-0 h-[0.58em] w-full fill-blue-300/70"
+          preserveAspectRatio="none"
         >
-          <svg
-            aria-hidden="true"
-            className="h-3 w-3 flex-none fill-blue-600 group-active:fill-current"
-          >
-            <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
-          </svg>
-          <span className="ml-3">Watch video</span>
-        </ButtonLink>
-      </div>
-      <div className="mt-36 lg:mt-44">
-        <p className="font-display text-base text-slate-900">
-          Trusted by these six companies so far
+          <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z" />
+        </svg>
+        <span className="relative">made simple</span>
+      </span>{' '}
+      for small businesses.
+    </h1> */}
+        <h1 className="mx-auto max-w-2xl font-display text-2xl font-medium tracking-tight text-slate-900 sm:text-3xl">
+          IEEE Computational Intelligence Society Bangalore Chapter
+        </h1>
+        <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
+          The world's largest technical professional organization for the
+          advancement of technology
         </p>
-        <ul className="mt-8 flex items-center justify-center space-x-8 sm:flex-col sm:space-x-0 sm:space-y-10 xl:flex-row xl:space-y-0 xl:space-x-12">
-          <li>
-            <ul className="flex flex-col items-center space-y-8 sm:flex-row sm:space-y-0 sm:space-x-12">
-              <li className="flex">
-                <Image
-                  src={logoTransistor}
-                  alt="Transistor"
-                  layout="fixed"
-                  unoptimized
-                />
-              </li>
-              <li className="flex">
-                <Image src={logoTuple} alt="Tuple" layout="fixed" unoptimized />
-              </li>
-              <li className="flex">
-                <Image
-                  src={logoStaticKit}
-                  alt="StaticKit"
-                  layout="fixed"
-                  unoptimized
-                />
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul className="flex flex-col items-center space-y-8 sm:flex-row sm:space-y-0 sm:space-x-12">
-              <li className="flex">
-                <Image
-                  src={logoMirage}
-                  alt="Mirage"
-                  layout="fixed"
-                  unoptimized
-                />
-              </li>
-              <li className="flex">
-                <Image
-                  src={logoLaravel}
-                  alt="Laravel"
-                  layout="fixed"
-                  unoptimized
-                />
-              </li>
-              <li className="flex">
-                <Image
-                  src={logoStatamic}
-                  alt="Statamic"
-                  layout="fixed"
-                  unoptimized
-                />
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </Container>
+        <div className="mt-10 flex justify-center">
+          {/* <ButtonLink href="/register">Get 6 months free</ButtonLink> */}
+          <ButtonLink
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            variant="outline"
+          >
+            <svg
+              aria-hidden="true"
+              className="h-3 w-3 flex-none fill-blue-600 group-active:fill-current"
+            >
+              <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
+            </svg>
+            <span className="ml-3">Watch video</span>
+          </ButtonLink>
+        </div>
+      </Container>
+    </>
   )
 }

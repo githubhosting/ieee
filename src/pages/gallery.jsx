@@ -6,6 +6,7 @@ import { Input } from '@/components/Input'
 import { Logo } from '@/components/Logo'
 import Image from 'next/image'
 import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 import { ButtonLink } from '@/components/Button'
 import { Container } from '@/components/Cointainer1'
@@ -127,6 +128,7 @@ export default function Login() {
           </ol>
         </Container>
       </section>
+      <Footer />
     </>
   )
 }
