@@ -6,7 +6,7 @@ import { Input } from '@/components/Input'
 import { Logo } from '@/components/Logo'
 import Image from 'next/image'
 import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
+import { Footer } from '@/components/Footer1'
 
 import { ButtonLink } from '@/components/Button'
 import { Container } from '@/components/Cointainer1'
@@ -109,9 +109,9 @@ export default function Login() {
           <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
             All Events Photos
           </p>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
+          {/* <p className="mt-4 text-lg tracking-tight text-slate-700">
             Sample Text
-          </p>
+          </p> */}
         </Container>
         <Container size="lg" className="mt-16">
           <ol className="-mx-3 grid grid-cols-1 gap-y-10 lg:grid-cols-3 lg:text-center xl:-mx-12 xl:divide-x xl:divide-slate-400/20">

@@ -133,7 +133,7 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="pt-10 pb-6 shadow-md">
+    <header className="pt-10 pb-5 shadow-md">
       <Container>
         <nav className="relative z-50 text-sm">
           <ul className="flex items-center">
@@ -142,6 +142,13 @@ export function Header() {
                 <a>
                   <span className="sr-only">Home</span>
                   <Logo className="h-10 w-auto" />
+                </a>
+              </Link>
+            </li>
+            <li className="ml-12 hidden md:block">
+              <Link href="/">
+                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                  <b>Home</b>
                 </a>
               </Link>
             </li>
