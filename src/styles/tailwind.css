@@ -33,3 +33,9 @@
 .footerbg {
   background-color: #1f2937;
 }
+.nummargin {
+  margin: -1.5px;
+}
+.numborder {
+  border-width: 1.7px;
+}

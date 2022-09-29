@@ -83,7 +83,7 @@ function MobileNavigation() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/ececom">
+                  <Link href="/execom">
                     <a className="block w-full" onClick={() => close()}>
                       EXECOM
                     </a>
@@ -134,93 +134,93 @@ function MobileNavigation() {
 export function Header() {
   return (
     <header className="pt-10 pb-6 shadow-md">
-        <Container>
-          <nav className="relative z-50 text-sm">
-            <ul className="flex items-center">
-              <li>
-                <Link href="/">
-                  <a>
-                    <span className="sr-only">Home</span>
-                    <Logo className="h-10 w-auto" />
-                  </a>
-                </Link>
-              </li>
-              <li className="ml-12 hidden md:block">
-                <Link href="/members">
-                  <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                    Members
-                  </a>
-                </Link>
-              </li>
-              <li className="ml-6 hidden md:block">
-                <Link href="/events">
-                  <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                    Events
-                  </a>
-                </Link>
-              </li>
-              <li className="ml-6 hidden md:block">
-                <Link href="/gallery">
-                  <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                    Gallery
-                  </a>
-                </Link>
-              </li>
-              <li className="ml-6 hidden md:block">
-                <Link href="/execom">
-                  <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                    EXECOM
-                  </a>
-                </Link>
-              </li>
-              <li className="ml-6 hidden md:block">
-                <Link href="/studentschapter">
-                  <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                    Students Chapter
-                  </a>
-                </Link>
-              </li>
-              <li className="ml-6 hidden md:block">
-                <Link href="/newsletter">
-                  <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                    Newsletter
-                  </a>
-                </Link>
-              </li>
-              <li className="ml-6 hidden md:block">
-                <Link href="/projects">
-                  <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                    Projects
-                  </a>
-                </Link>
-              </li>
-              <li className="ml-6 hidden md:block">
-                <Link href="/aboutus">
-                  <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                    About Us
-                  </a>
-                </Link>
-              </li>
-              {/*  <li className="ml-auto hidden md:block">
+      <Container>
+        <nav className="relative z-50 text-sm">
+          <ul className="flex items-center">
+            <li>
+              <Link href="/">
+                <a>
+                  <span className="sr-only">Home</span>
+                  <Logo className="h-10 w-auto" />
+                </a>
+              </Link>
+            </li>
+            <li className="ml-12 hidden md:block">
+              <Link href="/members">
+                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                  Members
+                </a>
+              </Link>
+            </li>
+            <li className="ml-6 hidden md:block">
+              <Link href="/events">
+                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                  Events
+                </a>
+              </Link>
+            </li>
+            <li className="ml-6 hidden md:block">
+              <Link href="/gallery">
+                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                  Gallery
+                </a>
+              </Link>
+            </li>
+            <li className="ml-6 hidden md:block">
+              <Link href="/execom">
+                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                  EXECOM
+                </a>
+              </Link>
+            </li>
+            <li className="ml-6 hidden md:block">
+              <Link href="/studentschapter">
+                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                  Students Chapter
+                </a>
+              </Link>
+            </li>
+            <li className="ml-6 hidden md:block">
+              <Link href="/newsletter">
+                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                  Newsletter
+                </a>
+              </Link>
+            </li>
+            <li className="ml-6 hidden md:block">
+              <Link href="/projects">
+                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                  Projects
+                </a>
+              </Link>
+            </li>
+            <li className="ml-6 hidden md:block">
+              <Link href="/aboutus">
+                <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                  About Us
+                </a>
+              </Link>
+            </li>
+            {/*  <li className="ml-auto hidden md:block">
               <Link href="/login">
                 <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
                   Sign in
                 </a>
               </Link>
             </li> */}
-              <li className="ml-auto md:ml-8 lg:hidden">
-                <ButtonLink href="/" className="bg-sky-500/100">
-                  <span>
-                    <span className="hidden lg:inline"></span>Home
-                  </span>
-                </ButtonLink>
-              </li>
-              <li className="ml-5 -mr-1 md:hidden">
-                <MobileNavigation />
-              </li>
-            </ul>
-          </nav>
-        </Container>
+            <li className="ml-auto md:ml-8 lg:hidden">
+              <ButtonLink href="/" className="bg-sky-500/100">
+                <span>
+                  <span className="hidden lg:inline"></span>Home
+                </span>
+              </ButtonLink>
+            </li>
+            <li className="ml-5 -mr-1 md:hidden">
+              <MobileNavigation />
+            </li>
+          </ul>
+        </nav>
+      </Container>
     </header>
   )
 }
