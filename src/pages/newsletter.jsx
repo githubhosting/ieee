@@ -32,7 +32,7 @@ export default function Login() {
     <>
       <div className="neumorphismbg">
         <Head>
-          <title>Events - IEEE | Computational Intelligence Society</title>
+          <title>Newsletter - IEEE | Computational Intelligence Society</title>
         </Head>
         <Header />
         <section className="mt-10 py-5 sm:py-8">

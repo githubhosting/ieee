@@ -12,7 +12,7 @@ export default function Execom() {
   return (
     <>
       <Head>
-        <title>EXECOM - IEEE | Computational Intelligence Society</title>
+        <title>Student Chapter - IEEE | Computational Intelligence Society</title>
       </Head>
       <Header />
       <section class="body-font text-gray-600">
