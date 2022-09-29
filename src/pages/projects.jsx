@@ -149,7 +149,7 @@ export default function Projects() {
                         Dr.Vijaya Kumar B.P<br></br>Dr. Megha.P.Arakeri
                       </td>
                       <td class="whitespace-nowrap border-r px-6 py-4 text-sm font-light text-gray-900">
-                        $1570.85
+                        <a href="/uwon">$1570.85</a>
                       </td>
                       <td class="whitespace-nowrap border-r px-6 py-4 text-sm font-light text-gray-900">
                         2020
