@@ -1,4 +1,4 @@
-import '../styles/hero.css'
+import '@/styles/hero.css'
 import Head from 'next/head'
 
 import { CallToAction } from '@/components/CallToAction'
