@@ -7,6 +7,11 @@ import { Input } from '@/components/Input'
 import { Logo } from '@/components/Logo'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer1'
+import img1 from '@/images/members/vinutha.png'
+import img2 from '@/images/members/megha.png'
+import img3 from '@/images/members/vijayakumar.png'
+import img4 from '@/images/members/sumana.png'
+import img5 from '@/images/members/kishore.png'
 
 export default function Execom() {
   return (
@@ -18,14 +23,113 @@ export default function Execom() {
       <section class="body-font text-gray-600">
         <div class="container mx-auto px-5 py-12">
           <div class="mb-10 text-center">
-            <h1 class="title-font mb-4 text-center text-2xl text-gray-900 sm:text-3xl font-semibold">
+            <h1 class="title-font mb-4 text-center text-2xl font-semibold text-gray-900 sm:text-3xl">
               Execom Members
             </h1>
             <p class="mx-auto text-base leading-relaxed lg:w-3/4 xl:w-2/4">
               The operation of the IEEE Bangalore Section is managed by the
               Section&#8217;s Executive committee.
             </p>
-            <div class="justify-center lg:flex">
+            <div class="container mx-auto px-5 py-12">
+              <div class="mb-5 flex w-full flex-col text-center">
+                <h1 class="title-font mb-4 text-2xl font-medium text-gray-900 sm:text-3xl">
+                  Office Bearers
+                </h1>
+                {/* <p class="mx-auto text-base leading-relaxed lg:w-2/3">
+                  Whatever cardigan tote bag tumblr hexagon brooklyn
+                  asymmetrical gentrify, subway tile poke farm-to-table. Franzen
+                  you probably haven't heard of them.
+                </p> */}
+              </div>
+              <div class="-m-2 flex flex-wrap">
+                <div class="w-full p-2 md:w-1/2 lg:w-1/3">
+                  <div class="flex h-full items-center rounded-lg border border-gray-200 p-4">
+                    <Image
+                      alt="team"
+                      class="mr-4 h-16 w-16 flex-shrink-0 rounded-full bg-gray-100 object-cover object-center"
+                      src={img2}
+                      height={64}
+                      width={64}
+                    />
+                    <div class="flex-grow">
+                      <h2 class="title-font font-medium text-gray-900">
+                        Dr. Megha. P. Arakeri
+                      </h2>
+                      <p class="text-gray-500">Chairperson</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full p-2 md:w-1/2 lg:w-1/3">
+                  <div class="flex h-full items-center rounded-lg border border-gray-200 p-4">
+                    <Image
+                      alt="team"
+                      class="mr-4 h-16 w-16 flex-shrink-0 rounded-full bg-gray-100 object-cover object-center"
+                      src={img5}
+                      height={64}
+                      width={64}
+                    />
+                    <div class="flex-grow">
+                      <h2 class="title-font font-medium text-gray-900">
+                        Mr. A. T. Kishore
+                      </h2>
+                      <p class="text-gray-500">Vice Chairperson</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full p-2 md:w-1/2 lg:w-1/3">
+                  <div class="flex h-full items-center rounded-lg border border-gray-200 p-4">
+                    <Image
+                      alt="team"
+                      class="mr-4 h-16 w-16 flex-shrink-0 rounded-full bg-gray-100 object-cover object-center"
+                      src={img1}
+                      height={64}
+                      width={64}
+                    />
+                    <div class="flex-grow">
+                      <h2 class="title-font font-medium text-gray-900">
+                        Dr. Vinutha. D.C
+                      </h2>
+                      <p class="text-gray-500">Secretary</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full p-2 md:w-1/2 lg:w-1/3">
+                  <div class="flex h-full items-center rounded-lg border border-gray-200 p-4">
+                    <Image
+                      alt="team"
+                      class="mr-4 h-16 w-16 flex-shrink-0 rounded-full bg-gray-100 object-cover object-center"
+                      src={img4}
+                      height={64}
+                      width={64}
+                    />
+                    <div class="flex-grow">
+                      <h2 class="title-font font-medium text-gray-900">
+                        Dr. Sumana. M
+                      </h2>
+                      <p class="text-gray-500">Treasurer</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full p-2 md:w-1/2 lg:w-1/3">
+                  <div class="flex h-full items-center rounded-lg border border-gray-200 p-4">
+                    <Image
+                      alt="team"
+                      class="mr-4 h-16 w-16 flex-shrink-0 rounded-full bg-gray-100 object-cover object-center"
+                      src={img3}
+                      height={64}
+                      width={64}
+                    />
+                    <div class="flex-grow">
+                      <h2 class="title-font font-medium text-gray-900">
+                        Dr. Vijaya Kumar B. P
+                      </h2>
+                      <p class="text-gray-500">Advisor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* <div class="justify-center lg:flex">
               <p class="mt-10 ml-4 text-left">
                 <b className="text-xl text-slate-900">Office Bearers</b>
                 <br />
@@ -36,7 +140,7 @@ export default function Execom() {
                 <u>Treasurer:</u> <b>Dr. Sumana. M</b> <br />
                 <u>Advisor:</u> <b>Dr. Vijaya Kumar B. P</b>
               </p>
-            </div>
+            </div> */}
           </div>
           <div class="-mx-2 flex flex-wrap sm:mx-auto sm:mb-2 lg:w-4/5">
             <div class="w-full p-2 sm:w-1/2">

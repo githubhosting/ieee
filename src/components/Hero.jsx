@@ -76,16 +76,20 @@ export function Hero() {
         </SwiperSlide>
       </Swiper>
       <Container className="pt-5 pb-16 text-center lg:pt-8">
-        <h1 className="mx-auto max-w-2xl font-display text-2xl font-medium tracking-tight text-slate-900 sm:text-3xl">
+        <h1 className="mx-auto max-w-2xl font-display text-2xl font-medium tracking-tight text-slate-900 sm:text-2xl">
           IEEE Computational Intelligence Society Bangalore Chapter
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-          The world's largest technical professional organization for the
-          advancement of technology
+          The <b>IEEE Computer Society</b> is a growing and diverse community of
+          computing professionals and the most trusted source for information,
+          inspiration, and collaboration in computer science and engineering.
+          IEEE Computer Society Bangalore Chapter is a professional chapter of
+          IEEE Computer Society focusing on the regions of the state of
+          Karnataka, India.
         </p>
         <div className="mt-10 flex justify-center">
           {/* <ButtonLink href="/register">Get 6 months free</ButtonLink> */}
-          <ButtonLink href="https://youtu.be/dOmDu-kxWBM" variant="outline">
+          {/* <ButtonLink href="https://youtu.be/dOmDu-kxWBM" variant="outline">
             <svg
               aria-hidden="true"
               className="h-3 w-3 flex-none fill-blue-600 group-active:fill-current"
@@ -93,7 +97,7 @@ export function Hero() {
               <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
             </svg>
             <span className="ml-3">Watch video</span>
-          </ButtonLink>
+          </ButtonLink> */}
         </div>
       </Container>
     </>

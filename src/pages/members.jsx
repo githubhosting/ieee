@@ -26,9 +26,9 @@ export default function Login() {
             <h1 class="title-font mb-4 text-2xl font-medium text-gray-900">
               Office Bearers
             </h1>
-            <p class="mx-auto text-base leading-relaxed lg:w-2/3">
+            {/* <p class="mx-auto text-base leading-relaxed lg:w-2/3">
              sample text
-            </p>
+            </p> */}
           </div>
           <div class="-m-4 flex flex-wrap justify-center gap-2.5 md:gap-3 lg:gap-5">
             <div class="rounded-xl border px-14 py-6 shadow sm:w-full md:w-1/2 lg:w-1/4">

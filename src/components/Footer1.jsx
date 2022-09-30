@@ -242,7 +242,7 @@ export function Footer() {
                 </a>
               </div>
               <p class="text-body-color text-sm">
-                &copy; Copyright 2022 IEEE – All rights reserved.
+                &copy; Copyright 2022 IEEE - All rights reserved.
               </p>
             </div>
           </div>
