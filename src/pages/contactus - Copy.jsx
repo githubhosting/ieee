@@ -12,7 +12,7 @@ import { ButtonLink } from '@/components/Button'
 import { SectionHeading } from '@/components/SectionHeading'
 import { Container } from '@/components/Cointainer1'
 
-export default function Contactus() {
+export default function Contactuscopy() {
   return (
     <>
       <div className="neumorphismbg">
