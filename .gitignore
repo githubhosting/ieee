@@ -31,4 +31,4 @@ yarn-error.log*
 # vercel
 .vercel
 
-src/pages/login.jsx
+/src/pages/login.jsx
