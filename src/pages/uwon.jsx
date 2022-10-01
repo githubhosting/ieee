@@ -7,16 +7,32 @@ import { Logo } from '@/components/Logo'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer1'
 import Confetti from 'react-confetti'
+import React, { Component } from 'react'
 
 export default function uwon() {
+  const [width, setWidth] = React.useState(0)
+  const [height, setHeight] = React.useState(0)
+  React.useEffect(() => {
+    setWidth(window.innerWidth)
+    setHeight(window.innerHeight)
+    //add event listener to on resize
+    window.addEventListener('resize', () => {
+      setWidth(window.innerWidth)
+      setHeight(window.innerHeight)
+    })
+  }, [])
+  console.log(width, height)
+
   return (
     <>
       <Header />
       <Confetti
+        width={width}
+        height={height}
         gravity={0.05}
         recycle={false}
         numberOfPieces={500}
-        className="h-full w-full"
+        // className="h-full w-full"
       />
       <div class="bg-white  ">
         <div class="z-20 mx-auto w-full py-12 px-4 text-center sm:px-6 lg:py-16 lg:px-8">
