@@ -19,6 +19,21 @@ import logoStaticKit from '@/images/logos/statickit.svg'
 import logoTransistor from '@/images/logos/transistor.svg'
 import logoTuple from '@/images/logos/tuple.svg'
 
+const images = [
+  {
+    link: 'https://www.officialmediaguide.com/ie06/wp-content/uploads/sites/73/2019/10/abstract01-1024x575.jpg',
+  },
+  {
+    link: 'https://cis.ieee.org/images/files/slideshow/video-archive.jpg',
+  },
+  {
+    link: 'https://pbs.twimg.com/media/Fb_Au2NWYAIIlMt.jpg',
+  },
+  {
+    link: 'https://media-exp1.licdn.com/dms/image/C4D22AQHkoGeI2vPz8g/feedshare-shrink_2048_1536/0/1648835983648?e=2147483647&v=beta&t=gm23waWUjKeHFpl3-SYomM07jW19WQCiLlX1gtzFshQ',
+  },
+]
+
 export function Hero() {
   return (
     <>
@@ -38,7 +53,18 @@ export function Hero() {
         modules={[Autoplay, Pagination, Navigation, EffectFade]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        {images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <img
+              className="lg:h-128 h-96 w-full object-fill"
+              src={image.link}
+              alt={index}
+              border-radius="10px"
+            />
+          </SwiperSlide>
+        ))}
+
+        {/* <SwiperSlide>
           <img
             className="lg:h-128 h-96 w-full object-fill"
             src="https://www.officialmediaguide.com/ie06/wp-content/uploads/sites/73/2019/10/abstract01-1024x575.jpg"
@@ -73,7 +99,7 @@ export function Hero() {
             src="https://pbs.twimg.com/media/Fb_Au2NWYAIIlMt.jpg"
             alt="image slide 5"
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
       <Container className="pt-5 pb-16 text-center lg:pt-8">
         <h1 className="mx-auto max-w-2xl font-display text-2xl font-medium tracking-tight text-slate-900 sm:text-2xl">
