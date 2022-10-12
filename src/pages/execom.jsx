@@ -15,6 +15,12 @@ import img5 from '@/images/members/kishore.png'
 
 const members = [
   {
+    name: 'Dr. Vijaya Kumar B. P',
+    designation: 'Advisor',
+    image: img3,
+    profile: '/documents/Vijayakumar-profile.pdf',
+  },
+  {
     name: 'Dr. Megha. P. Arakeri',
     designation: 'Chair',
     image: img2,
@@ -37,12 +43,6 @@ const members = [
     designation: 'Treasurer',
     image: img4,
     profile: '/documents/Sumana-profile.pdf',
-  },
-  {
-    name: 'Dr. Vijaya Kumar B. P',
-    designation: 'Advisor',
-    image: img3,
-    profile: '/documents/Vijayakumar-profile.pdf',
   },
 ]
 const ececommembers = [
@@ -79,7 +79,9 @@ export default function Login() {
   return (
     <>
       <Head>
-        <title>Members - IEEE | Computational Intelligence Society</title>
+        <title>
+          EXECOM Members - IEEE | Computational Intelligence Society
+        </title>
       </Head>
       <Header />
       <section class="body-font text-gray-600">
@@ -101,7 +103,7 @@ export default function Login() {
               <div class="-m-2 flex flex-wrap">
                 {members.map((member) => (
                   <div class="w-full p-2 md:w-1/2 lg:w-1/3">
-                    <div class="flex h-full items-center rounded-lg border border-gray-200 p-4">
+                    <div class="flex h-full items-center rounded-lg border border-gray-50 p-4 shadow-md">
                       <Image
                         alt="team"
                         class="mr-4 h-16 w-16 flex-shrink-0 rounded-full bg-gray-100 object-cover object-center"
@@ -110,7 +112,7 @@ export default function Login() {
                         width={64}
                       />
                       <div class="flex-grow">
-                        <h2 class="title-font font-medium text-gray-900">
+                        <h2 class="title-font font-semibold text-gray-900">
                           {member.name}
                         </h2>
                         <p class="text-gray-500">{member.designation}</p>

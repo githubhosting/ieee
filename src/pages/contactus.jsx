@@ -24,7 +24,7 @@ export default function Contactus() {
         <section class="body-font text-gray-600 ">
           <div class="container mx-auto flex flex-col px-5 py-12">
             <div class="mx-auto lg:w-4/6">
-              <div class="lg:h-242 overflow-hidden rounded-xl shadow-lg sm:h-64">
+              <div class="lg:h-242 overflow-hidden rounded-xl shadow-lg sm:h-80">
                 <img
                   alt="content"
                   class="h-full w-full object-cover object-center"
@@ -84,7 +84,7 @@ export default function Contactus() {
                     </p>
                   </div>
                 </div>
-                <div class="mt-4 border-t border-gray-200 pt-4 text-center sm:mt-0 sm:w-2/3 sm:border-l sm:border-t-0 sm:py-8 sm:pl-8 sm:text-left mb-10">
+                <div class="mt-4 mb-10 rounded-xl border-t border-gray-200 bg-slate-100 p-4 text-center sm:mt-0 sm:w-2/3 sm:border-l sm:border-t-0 sm:py-8 sm:pl-8 sm:text-left">
                   <p class="mb-4 text-base  ">
                     <b>IEEE Computational Intelligence Society (CIS)</b> is a
                     professional society of IEEE focusing on “the theory,
@@ -95,7 +95,7 @@ export default function Contactus() {
                     intelligent systems in which these paradigms are contained.
                   </p>
                   <p class="mb-4 text-lg leading-relaxed">
-                    Register going on so join by clicking below
+                    Registration is going on so join by clicking below
                   </p>
                   <div class="inline-flex items-center text-sky-500">
                     <button

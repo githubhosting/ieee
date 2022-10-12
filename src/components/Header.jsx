@@ -78,7 +78,8 @@ function MobileNavigation() {
                 <li>
                   <Link href="/members">
                     <a className="block w-full" onClick={() => close()}>
-                      Members
+                      {/* Members */}
+                      Office Bearers
                     </a>
                   </Link>
                 </li>
@@ -155,7 +156,8 @@ export function Header() {
             <li className="ml-12 hidden md:block">
               <Link href="/members">
                 <a className="rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                  Members
+                  {/* Members */}
+                  Office Bearers
                 </a>
               </Link>
             </li>

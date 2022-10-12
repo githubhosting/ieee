@@ -15,6 +15,12 @@ import img5 from '@/images/members/kishore.png'
 
 const members = [
   {
+    name: 'Dr. Vijaya Kumar B. P',
+    designation: 'Advisor',
+    image: img3,
+    profile: '/documents/Vijayakumar-profile.pdf',
+  },
+  {
     name: 'Dr. Megha. P. Arakeri',
     designation: 'Chair',
     image: img2,
@@ -38,19 +44,15 @@ const members = [
     image: img4,
     profile: '/documents/Sumana-profile.pdf',
   },
-  {
-    name: 'Dr. Vijaya Kumar B. P',
-    designation: 'Advisor',
-    image: img3,
-    profile: '/documents/Vijayakumar-profile.pdf',
-  },
 ]
 
 export default function Login() {
   return (
     <>
       <Head>
-        <title>Members - IEEE | Computational Intelligence Society</title>
+        <title>
+          Office Bearers - IEEE | Computational Intelligence Society
+        </title>
       </Head>
       <Header />
       <section class="body-font text-gray-600">
@@ -65,7 +67,7 @@ export default function Login() {
           </div>
           <div class="-m-4 flex flex-wrap justify-center gap-2.5 md:gap-3 lg:gap-5">
             {members.map((member) => (
-              <div class="rounded-xl border px-14 py-6 shadow sm:w-full md:w-1/2 lg:w-1/4">
+              <div class="rounded-xl border px-14 py-6 shadow-lg sm:w-full md:w-1/2 lg:w-1/4">
                 <div class="flex h-full flex-col items-center text-center">
                   <div alt="team">
                     <Image
@@ -79,7 +81,7 @@ export default function Login() {
                     <h2 class="title-font text-lg font-medium text-gray-900">
                       {member.name}
                     </h2>
-                    <h3 class="mb-3 text-gray-500">Chair Person</h3>
+                    <h3 class="mb-3 text-gray-500">{member.designation}</h3>
                     <a
                       href={member.profile}
                       target="_blank"

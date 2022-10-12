@@ -79,13 +79,21 @@ export function Hero() {
         <h1 className="mx-auto max-w-2xl font-display text-2xl font-medium tracking-tight text-slate-900 sm:text-2xl">
           IEEE Computational Intelligence Society Bangalore Chapter
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
+        {/* <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
           The <b>IEEE Computer Society</b> is a growing and diverse community of
           computing professionals and the most trusted source for information,
           inspiration, and collaboration in computer science and engineering.
           IEEE Computer Society Bangalore Chapter is a professional chapter of
           IEEE Computer Society focusing on the regions of the state of
           Karnataka, India.
+        </p> */}
+        <p class="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
+          <b>IEEE Computational Intelligence Society (CIS)</b> is a professional
+          society of IEEE focusing on “the theory, design, application, and
+          development of biologically and linguistically motivated computational
+          paradigms emphasising neural networks, connectionist systems, genetic
+          algorithms, evolutionary programming, fuzzy systems, and hybrid
+          intelligent systems in which these paradigms are contained.
         </p>
         <div className="mt-10 flex justify-center">
           {/* <ButtonLink href="/register">Get 6 months free</ButtonLink> */}
