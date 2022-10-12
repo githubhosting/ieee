@@ -18,7 +18,7 @@ const members = [
     name: 'Dr. Vijaya Kumar B. P',
     designation: 'Advisor',
     image: img3,
-    profile: '/documents/Vijayakumar-profile.pdf',
+    profile: '/documents/Vijaya Kumar-profile.pdf',
   },
   {
     name: 'Dr. Megha. P. Arakeri',
