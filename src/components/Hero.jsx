@@ -37,6 +37,22 @@ const images = [
 export function Hero() {
   return (
     <>
+      <section className=" text-gray-800">
+        <div className="md:py-30 container mx-auto flex flex-col items-center px-4 py-10 text-center md:px-10 lg:px-32 ">
+          <h1 className="text-4xl font-bold leading-none sm:text-5xl">
+            IEEE{' '}
+            <span className="text-sky-600">
+              Computational Intelligence Society
+            </span>
+            <br></br>
+            Bangalore Chapter
+          </h1>
+          {/* <p className="mt-8 mb-12 px-8 text-lg">
+            Cupiditate minima voluptate temporibus quia? Architecto beatae esse
+            ab amet vero eaque explicabo!
+          </p> */}
+        </div>
+      </section>
       <Swiper
         spaceBetween={30}
         effect={'fade'}
@@ -63,48 +79,11 @@ export function Hero() {
             />
           </SwiperSlide>
         ))}
-
-        {/* <SwiperSlide>
-          <img
-            className="lg:h-128 h-96 w-full object-fill"
-            src="https://www.officialmediaguide.com/ie06/wp-content/uploads/sites/73/2019/10/abstract01-1024x575.jpg"
-            alt="image slide 1"
-            border-radius="10px"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="lg:h-128 h-96 w-full rounded-lg object-fill"
-            src="https://www.annabellatham.com/wp-content/uploads/2019/12/ING_19043_260593-1024x890.jpg"
-            alt="image slide 2"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="lg:h-128 h-96 w-full object-fill"
-            src="https://media-exp1.licdn.com/dms/image/C4D22AQHkoGeI2vPz8g/feedshare-shrink_2048_1536/0/1648835983648?e=2147483647&v=beta&t=gm23waWUjKeHFpl3-SYomM07jW19WQCiLlX1gtzFshQ"
-            alt="image slide 3"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="lg:h-128 h-96 w-full object-fill"
-            src="https://cis.ieee.org/images/files/slideshow/video-archive.jpg"
-            alt="image slide 4"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="lg:h-128 h-96 w-full object-fill"
-            src="https://pbs.twimg.com/media/Fb_Au2NWYAIIlMt.jpg"
-            alt="image slide 5"
-          />
-        </SwiperSlide> */}
       </Swiper>
       <Container className="pt-5 pb-16 text-center lg:pt-8">
-        <h1 className="mx-auto max-w-2xl font-display text-2xl font-medium tracking-tight text-slate-900 sm:text-2xl">
+        {/* <h1 className="mx-auto max-w-2xl font-display text-2xl font-medium tracking-tight text-slate-900 sm:text-2xl">
           IEEE Computational Intelligence Society Bangalore Chapter
-        </h1>
+        </h1> */}
         {/* <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
           The <b>IEEE Computer Society</b> is a growing and diverse community of
           computing professionals and the most trusted source for information,
@@ -121,6 +100,14 @@ export function Hero() {
           algorithms, evolutionary programming, fuzzy systems, and hybrid
           intelligent systems in which these paradigms are contained.
         </p>
+        <div className="flex flex-wrap justify-center">
+          <ButtonLink
+            href="https://cis.ieee.org/"
+            className="text-md mt-10 rounded bg-sky-600 px-4 py-1.5 font-semibold text-gray-50"
+          >
+            Know more
+          </ButtonLink>
+        </div>
         <div className="mt-10 flex justify-center">
           {/* <ButtonLink href="/register">Get 6 months free</ButtonLink> */}
           {/* <ButtonLink href="https://youtu.be/dOmDu-kxWBM" variant="outline">

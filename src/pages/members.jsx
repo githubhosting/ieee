@@ -12,13 +12,14 @@ import img2 from '@/images/members/megha.png'
 import img3 from '@/images/members/vijayakumar.png'
 import img4 from '@/images/members/sumana.png'
 import img5 from '@/images/members/kishore.png'
-
+import { Fragment, useState } from 'react'
 const members = [
   {
     name: 'Dr. Vijaya Kumar B. P',
     designation: 'Advisor',
     image: img3,
     profile: '/documents/Vijaya Kumar-profile.pdf',
+    details: "detailed member's profile",
   },
   {
     name: 'Dr. Megha. P. Arakeri',
@@ -82,7 +83,7 @@ export default function Login() {
                       {member.name}
                     </h2>
                     <h3 class="mb-3 text-gray-500">{member.designation}</h3>
-                    <a
+                    {/* <a
                       href={member.profile}
                       target="_blank"
                       rel="noreferrer"
@@ -100,7 +101,7 @@ export default function Login() {
                       >
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                       </svg>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
