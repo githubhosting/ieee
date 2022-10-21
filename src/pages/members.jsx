@@ -13,8 +13,14 @@ import img3 from '@/images/members/vijayakumar.png'
 import img4 from '@/images/members/sumana.png'
 import img5 from '@/images/members/kishore.png'
 import { Fragment, useState } from 'react'
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from '@material-tailwind/react'
 const members = [
   {
+    id: 1,
     name: 'Dr. Vijaya Kumar B. P',
     designation: 'Advisor',
     image: img3,
@@ -22,32 +28,59 @@ const members = [
     details: "detailed member's profile",
   },
   {
+    id: 2,
     name: 'Dr. Megha. P. Arakeri',
     designation: 'Chair',
     image: img2,
     profile: '/documents/Megha-profile.pdf',
+    details: "detailed member's profile",
   },
   {
+    id: 3,
     name: 'Mr. A. T. Kishore',
     designation: 'Vice Chair',
     image: img5,
     profile: '/documents/Kishore-profile.pdf',
   },
   {
+    id: 4,
     name: 'Dr. Vinutha. D.C',
     designation: 'Secretary',
     image: img1,
     profile: '/documents/Vinutha-profile.pdf',
   },
   {
+    id: 5,
     name: 'Dr. Sumana. M',
     designation: 'Treasurer',
     image: img4,
     profile: '/documents/Sumana-profile.pdf',
   },
 ]
+function Icon({ id, open }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className={`${
+        id === open ? 'rotate-180' : ''
+      } h-5 w-5 transition-transform`}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
+  )
+}
 
 export default function Login() {
+  const [open, setOpen] = useState(0)
+
+  const handleOpen = (value) => {
+    setOpen(open === value ? 0 : value)
+  }
+
   return (
     <>
       <Head>
@@ -102,6 +135,17 @@ export default function Login() {
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                       </svg>
                     </a> */}
+                    <Fragment>
+                      <Accordion
+                        open={open === 2}
+                        icon={<Icon id={2} open={open} />}
+                      >
+                        <AccordionHeader onClick={() => handleOpen(2)}>
+                          View Profile
+                        </AccordionHeader>
+                        <AccordionBody>{member.details}</AccordionBody>
+                      </Accordion>
+                    </Fragment>
                   </div>
                 </div>
               </div>
