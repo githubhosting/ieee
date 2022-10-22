@@ -39,3 +39,15 @@
 .numborder {
   border-width: 1.7px;
 }
+.swiper-slide img {
+  width: unset;
+  margin: auto;
+}
+.swiper-slide {
+  background: white;
+}
+.shadowj {
+  -moz-box-shadow: 3px 3px 15px 0px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 3px 3px 15px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: 3px 3px 15px 0px rgba(255, 255, 255, 0.5);
+}

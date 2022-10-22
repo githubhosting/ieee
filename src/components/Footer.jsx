@@ -64,9 +64,9 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/aboutus">
+                <Link href="/contactus">
                   <a className="rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900">
-                    About Us
+                    Contact Us
                   </a>
                 </Link>
               </li>

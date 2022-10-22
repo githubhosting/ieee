@@ -59,9 +59,7 @@ export default function Login() {
                 Following activities are conducted to enhance the technical
                 knowledge in the areas of computational intelligence, machine
                 learning, Artificial Intelligence, Soft Computing for
-                professionals, faculty and students of engineering courses by
-                giving preference to IEEE members with some benefits to IEEE CIS
-                members.
+                professionals, faculty and students of engineering courses.
               </p>
             </div>
             <ul
@@ -117,7 +115,7 @@ export default function Login() {
                   </Link>
                 </div>
               </li> */}
-              <li className="neumorphism rounded-2xl border border-white p-5 mb-10">
+              <li className="neumorphism mb-10 rounded-2xl border border-white p-5">
                 <h3 className="text-center text-3xl font-semibold text-gray-900">
                   Events 2020
                 </h3>
@@ -178,11 +176,13 @@ export default function Login() {
                   </div>
                 </div>
               </li>
-              <li className="neumorphism rounded-2xl border border-white p-5 mb-10">
+              <li className="neumorphism mb-10 rounded-2xl border border-white p-5">
                 <h3 className="text-center text-3xl font-semibold text-gray-900">
                   Events 2021
                 </h3>
-                <p className="mt-2 text-center text-gray-700">Activities conducted for the year 2021 under IEEE CIS.</p>
+                <p className="mt-2 text-center text-gray-700">
+                  Activities conducted for the year 2021 under IEEE CIS.
+                </p>
                 <div class="flex justify-center overflow-hidden p-2 ">
                   <div class="border-grey-200 space-y-2 rounded-lg border p-4 sm:-mx-1 sm:flex sm:space-y-0">
                     <button
