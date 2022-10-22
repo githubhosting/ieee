@@ -82,8 +82,8 @@ export default function Login() {
                       class="flex-shrink-0 rounded-lg object-cover  sm:mx-4"
                       src={member.image}
                       alt=""
-                      width=270px
-                      height=270px
+                      width="270px"
+                      height="270px"
                     />
                   </div>
 
