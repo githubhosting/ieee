@@ -75,7 +75,7 @@ export default function Login() {
 
           <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-16 xl:grid-cols-2">
             {members.map((member) => (
-              <div class="group cursor-pointer rounded-xl border px-12 py-8 transition-colors duration-300">
+              <div class="transform cursor-pointer rounded-xl border px-12 py-8 transition-colors duration-300">
                 <div class="flex flex-col sm:-mx-4 sm:flex-row">
                   <div>
                     <Image
