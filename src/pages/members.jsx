@@ -13,11 +13,7 @@ import img3 from '@/images/members/vijayakumar.png'
 import img4 from '@/images/members/sumana.png'
 import img5 from '@/images/members/kishore.png'
 import { Fragment, useState } from 'react'
-import {
-  Accordion,
-  AccordionHeader,
-  AccordionBody,
-} from '@material-tailwind/react'
+
 const members = [
   {
     id: 1,
