@@ -71,11 +71,7 @@ export default function Login() {
             Our <span class="text-blue-500">Executive Team</span>
           </h1>
 
-          <p class="mx-auto my-6 max-w-2xl text-center text-gray-500 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-            incidunt ex placeat modi magni quia error alias, adipisci rem
-            similique, at omnis eligendi optio eos harum.
-          </p>
+          <p class="mx-auto my-6 max-w-2xl text-center text-gray-500"></p>
 
           <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-16 xl:grid-cols-2">
             {members.map((member) => (
