@@ -90,43 +90,19 @@ export default function Login() {
                   <div class="mt-4 sm:mx-4 sm:mt-0">
                     <h1 class="text-xl font-semibold capitalize text-gray-700 group-hover:text-white ">
                       {member.name}
-                    </h2>
-                    <h3 class="mb-3 text-gray-500">{member.designation}</h3>
-                    <a
-                      href={member.profile}
-                      target="_blank"
-                      rel="noreferrer"
-                      class="inline-flex items-center justify-center py-2 px-4 text-center text-sky-500 lg:px-8 xl:px-10"
-                    >
-                      View Profile
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="ml-2 h-4 w-4"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                      </svg>
-                    </a>
-
                     </h1>
+                    <h3 class="mb-3 text-gray-500">{member.designation}</h3>
 
                     <p class="mt-2 capitalize text-gray-500 group-hover:text-gray-300 ">
                       {member.designation}
                     </p>
-
                   </div>
                 </div>
 
-                <p class="mt-4 capitalize text-gray-500 group-hover:text-gray-300 ">
-                  {member.description}
-                </p>
-
-                <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900 text-md mt-10 rounded bg-sky-600 px-4 py-1.5 font-semibold text-gray-50"
-                    href={member.profile}>
+                <a
+                  class="text-md group mt-10 inline-flex items-center justify-center rounded-full rounded bg-slate-900 bg-sky-600 py-2 px-4 px-4 py-1.5 text-sm font-semibold font-semibold text-white text-gray-50 hover:bg-slate-700 hover:text-slate-100 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900 active:bg-slate-800 active:text-slate-300"
+                  href={member.profile}
+                >
                   View Profile
                 </a>
               </div>
