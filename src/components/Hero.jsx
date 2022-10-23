@@ -32,6 +32,9 @@ const images = [
   {
     link: 'https://media-exp1.licdn.com/dms/image/C4D22AQHkoGeI2vPz8g/feedshare-shrink_2048_1536/0/1648835983648?e=2147483647&v=beta&t=gm23waWUjKeHFpl3-SYomM07jW19WQCiLlX1gtzFshQ',
   },
+  {
+    link: 'https://images.unsplash.com/photo-1535378620166-273708d44e4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+  },
 ]
 
 export function Hero() {
