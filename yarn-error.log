@@ -1,0 +1,59 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Shravan\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add firebase
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\SQL Anywhere 17\bin64;C:\Program Files\SQL Anywhere 17\bin32;C:\Users\Shravan\AppData\Local\Microsoft\WindowsApps;C:\Users\Shravan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Shravan\AppData\Roaming\npm;C:\flutter\bin;C:\Users\Shravan\.dotnet\tools;C:\msys64\mingw64\bin;C:\Program Files\JetBrains\PyCharm 2022.2.2\bin;;C:\Program Files\Java\jdk-19\bin;C:\tools\dart-sdk\bin;C:\Users\Shravan\AppData\Roaming\Pub\Cache\bin;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.15.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Shravan\Downloads\tailwindpack\TailwindUI templates\salient\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node'
+
+npm manifest: 
+  {
+    "name": "tailwindui-saas",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "browserslist": "defaults, not ie <= 11",
+    "dependencies": {
+      "@headlessui/react": "^1.6.5",
+      "@react-hook/window-size": "^3.1.1",
+      "@tailwindcss/forms": "^0.5.2",
+      "autoprefixer": "^10.4.7",
+      "clsx": "^1.1.1",
+      "focus-visible": "^5.2.0",
+      "next": "12.1.6",
+      "postcss-focus-visible": "^6.0.4",
+      "react": "18.2.0",
+      "react-confetti": "^6.1.0",
+      "react-dom": "18.2.0",
+      "react-use-window-size": "^1.0.1",
+      "swiper": "^8.4.2",
+      "tailwindcss": "^3.1.3"
+    },
+    "devDependencies": {
+      "eslint": "8.17.0",
+      "eslint-config-next": "12.1.6",
+      "prettier": "^2.7.1",
+      "prettier-plugin-tailwindcss": "^0.1.11"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
