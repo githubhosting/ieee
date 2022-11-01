@@ -40,8 +40,8 @@
   border-width: 1.7px;
 }
 .swiper-slide img {
-  width: unset;
-  margin: auto;
+/*   width: unset; */
+/*   margin: auto; */
 }
 .swiper-slide {
   background: white;
