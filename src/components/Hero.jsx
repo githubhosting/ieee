@@ -104,7 +104,7 @@ export function Hero() {
         {images.map((image, index) => (
           <SwiperSlide key={index}>
             <img
-              className="lg:h-128 h-100 w-full object-fill"
+              className="lg:h-128 h-96 w-full object-fill"
               src={image.url}
               alt={index}
               border-radius="10px"
